@@ -16,12 +16,15 @@ this.title = 'Angular 2';
 this.link = 'http://angular.io';
 this.votes = 10;
 }
-voteUp() {
+voteUp(): boolean {
 this.votes += 1;
+return false;
 }
-voteDown() {
+voteDown(): boolean {
 this.votes -= 1;
+return false;
 }
+
 
 ngOnInit() {
 }
